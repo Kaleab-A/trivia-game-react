@@ -23,7 +23,6 @@ body {
 	font-family: "Josefin Sans";
 	letter-spacing: 8px;
 	text-transform: uppercase;
-	/* color: #d9d9d9; */
 	background: -webkit-linear-gradient(#75c7df, #aab418);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
