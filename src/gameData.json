@@ -1,0 +1,285 @@
+{
+  "gameList": [
+    {
+      "gameID": "CuhNOxTNkW",
+      "players": [
+        "Kaleab"
+      ],
+      "host": "Kaleab",
+      "id": 1
+    },
+    {
+      "gameID": "4sNZg11pgS",
+      "players": [
+        {
+          "name": "public",
+          "correct": [
+            7
+          ],
+          "wrong": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "private",
+          "correct": [],
+          "wrong": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "host": "public",
+      "id": 2
+    },
+    {
+      "gameID": "ebtApeq5hq",
+      "players": [
+        {
+          "name": "",
+          "correct": [],
+          "wrong": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "host": "",
+      "id": 3
+    },
+    {
+      "gameID": "sjz17Y6lyi",
+      "players": [
+        {
+          "name": "dsads",
+          "correct": [],
+          "wrong": []
+        }
+      ],
+      "host": "dsads",
+      "id": 4
+    },
+    {
+      "gameID": "9RA1nkSDtu",
+      "players": [
+        {
+          "name": "dsaas",
+          "correct": [],
+          "wrong": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "host": "dsaas",
+      "id": 5
+    },
+    {
+      "gameID": "IkDfD7gTa8",
+      "players": [
+        {
+          "name": "dsaasd",
+          "correct": [
+            2
+          ],
+          "wrong": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "host": "dsaasd",
+      "id": 6
+    },
+    {
+      "gameID": "P92tyahXk6",
+      "players": [
+        {
+          "name": "dsss",
+          "correct": [],
+          "wrong": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "host": "dsss",
+      "id": 7
+    },
+    {
+      "gameID": "JJvEUDKSwi",
+      "players": [
+        {
+          "name": "sda",
+          "correct": [],
+          "wrong": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "host": "sda",
+      "id": 8
+    },
+    {
+      "gameID": "yk1wH4zA3h",
+      "players": [
+        {
+          "name": "sdasadsa",
+          "correct": [],
+          "wrong": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "host": "sdasadsa",
+      "id": 9
+    },
+    {
+      "gameID": "KrgPW2ylyd",
+      "players": [
+        {
+          "name": "sadasdas",
+          "correct": [
+            1,
+            2,
+            3,
+            6,
+            9
+          ],
+          "wrong": [
+            0,
+            4,
+            5,
+            7,
+            8
+          ]
+        }
+      ],
+      "host": "sadasdas",
+      "id": 10
+    },
+    {
+      "gameID": "PMvHOWv3jR",
+      "players": [
+        {
+          "name": "dsad",
+          "correct": [],
+          "wrong": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "host": "dsad",
+      "id": 11
+    },
+    {
+      "gameID": "ml5WVUX6OZ",
+      "players": [
+        {
+          "name": "dsaasa",
+          "correct": [],
+          "wrong": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "host": "dsaasa",
+      "id": 12
+    },
+    {
+      "gameID": "nSAXPwOe1r",
+      "players": [
+        {
+          "name": "",
+          "correct": [],
+          "wrong": []
+        }
+      ],
+      "host": "",
+      "id": 13
+    }
+  ]
+}
