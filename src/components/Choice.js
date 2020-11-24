@@ -11,13 +11,11 @@ const Choice = (props) => {
 
 	const handleHoverOut = (e) => {
 		var numberCircle = document.getElementById("b" + e.target.id[1]);
-		// console.log(numberCircle, "b" + e.target.id[1], e.target);
 		numberCircle.style.backgroundColor = "#79b6c7";
 	};
 
 	const handleClick = (e) => {
 		var numberCircle = document.getElementById("b" + e.target.id[1]);
-		console.log(numberCircle, "b" + e.target.id[1], e.target);
 		numberCircle.style.backgroundColor = "#79b6c7";
 	};
 

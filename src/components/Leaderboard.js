@@ -14,11 +14,9 @@ const LeaderBoard = () => {
 			})
 				.then((response) => response.json())
 				.then((data) => {
-					console.log("looooooll", data);
 					data.forEach((element) => {
 						if (element.id == gameResult.id) {
 							setGameData(element);
-							console.log("Huuuuray", element);
 						}
 					});
 				});
@@ -37,19 +35,15 @@ const LeaderBoard = () => {
 	var ranking;
 	if (gameData) {
 		var playerData;
-		console.log("000a000", questions, gameData.players);
 		var scoreList = [];
 		gameData.players.forEach((element) => {
 			scoreList.push([element.name, element.correct.length]);
-			console.log("=========", element);
 		});
 		scoreList = scoreList.sort(sortFunction);
 		scoreList.forEach((element, index) => {
 			element.push(index + 1);
 		});
-		console.log("ssssssssssssssssssssssss", scoreList);
 		let myScore = scoreList.filter((x) => x[0] == gameResult.userName)[0];
-		console.log("----------->", scoreList, myScore);
 		scoreList.unshift([gameResult.userName, myScore[1], myScore[2]]);
 		ranking = (
 			<table class="tableStyle">

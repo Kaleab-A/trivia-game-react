@@ -3,8 +3,6 @@ import { useSelector } from "react-redux";
 import Choice from "./Choice";
 import { useDispatch } from "react-redux";
 import { nextQuestion, setCorrectAnswer, setWrongAnswer } from "../redux/actions";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 const Choices = () => {
 	const dispatch = useDispatch();
@@ -28,12 +26,9 @@ const Choices = () => {
 	}
 
 	const handleClick = (e) => {
-		console.log(e.target.innerHTML);
 		if (e.target.innerHTML == questionsRes.question[questionsRes.currQsID].correct_answer) {
-			console.log("Corr");
 			dispatch(setCorrectAnswer(questionsRes.currQsID));
 		} else {
-			console.log("Wrong");
 			dispatch(setWrongAnswer(questionsRes.currQsID));
 		}
 		fetch("http://localhost:3001/gameList/", {
@@ -42,7 +37,6 @@ const Choices = () => {
 			.then((response) => response.json())
 			.then((data) => {
 				var dataNew;
-				console.log("ooooo...", gameData);
 				const game_id = gameData.id;
 				data.forEach((element) => {
 					if (element.id == game_id) {
@@ -51,16 +45,13 @@ const Choices = () => {
 				});
 				var playerID;
 				var myName = gameData.userName;
-				console.log("hhaa", dataNew, game_id, data);
 				dataNew.players.forEach((element, index) => {
 					if (element.name == myName) {
 						playerID = index;
 					}
 				});
-				console.log("TEST", game_id, playerID, dataNew);
 				dataNew.players[playerID].correct = questionsRes.correct;
 				dataNew.players[playerID].wrong = questionsRes.wrong;
-				console.log("TEST1", dataNew);
 				fetch("http://localhost:3001/gameList/" + game_id, {
 					method: "PUT",
 					headers: { "Content-Type": "application/json" },

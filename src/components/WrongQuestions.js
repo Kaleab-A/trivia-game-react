@@ -10,11 +10,9 @@ const WrongQuestions = () => {
 			})
 				.then((response) => response.json())
 				.then((data) => {
-					console.log("looooooll", data);
 					data.forEach((element) => {
 						if (element.id == gameResult.id) {
 							setGameData(element);
-							console.log("Huuuuray");
 						}
 					});
 				});
@@ -29,7 +27,6 @@ const WrongQuestions = () => {
 	const [isFlipped, flip] = useState(false);
 	const handleClick = (e) => {
 		flip(!isFlipped);
-		// this.setState((prevState) => ({ isFlipped: !prevState.isFlipped }));
 	};
 
 	const returnValue = (id) => {
@@ -47,7 +44,6 @@ const WrongQuestions = () => {
 				playerData = element;
 			}
 		});
-		console.log("playerData", playerData);
 		wrongQuestions = (
 			<div class="card" style={{ width: 400, marginTop: 25, textAlign: "center", backgroundColor: "#F67F3B" }}>
 				<ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">

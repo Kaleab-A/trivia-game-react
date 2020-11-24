@@ -3,12 +3,10 @@ import Question from "./Question";
 import Choices from "./Choices";
 import brain from "../Images/brainWork.gif";
 import { useSelector } from "react-redux";
-import { Roll } from "react-awesome-reveal";
 import LeaderBoard from "./Leaderboard";
 
 const QnA = () => {
 	const fetchedRes = useSelector((state) => state.getQuestions);
-	console.log("jacg", fetchedRes);
 	var show = (
 		<div className="row no-gutters">
 			<img src={brain} id="brain" style={{ opacity: 0.2 }} />

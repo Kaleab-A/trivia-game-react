@@ -2,11 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css?family=Crimson+Text");
 
-@font-face {
-	font-family: "in-your-face-joffrey";
-	src: url("../fonts/In-your-face-joffrey.ttf");
-}
-
 html,
 body {
 	scroll-behavior: smooth;

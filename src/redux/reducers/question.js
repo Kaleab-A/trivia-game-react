@@ -2,10 +2,8 @@ const initialState = { fetching: false, fetched: false, currQsID: 0, correct: []
 const questionsReducer = (state = initialState, action) => {
 	switch (action.type) {
 		case "FETCHING":
-			console.log("LOADING>>>");
 			return { ...state, fetching: true };
 		case "FETCHING_SUCCESS":
-			console.log("LOADED");
 			return { ...state, fetching: false, fetched: true, question: action.payload };
 		case "NEXT_QUESTION":
 			return { ...state, currQsID: state.currQsID + 1 };
@@ -18,7 +16,6 @@ const questionsReducer = (state = initialState, action) => {
 			wrongNew.push(action.questionID);
 			return { ...state, wrong: wrongNew };
 		default:
-			console.log("NONE");
 			return state;
 	}
 };

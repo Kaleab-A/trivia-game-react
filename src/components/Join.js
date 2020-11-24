@@ -2,7 +2,7 @@
 import React, { Component, useState, useEffect } from "react";
 import worldIcon from "../Images/world.png";
 import { Link } from "react-router-dom";
-import { setID, setGameID, setName, disableJoinButton } from "../redux/actions";
+import { setID, setName, disableJoinButton } from "../redux/actions";
 import { useDispatch, useSelector } from "react-redux";
 
 const JoinGame = (props) => {
@@ -25,15 +25,11 @@ const JoinGame = (props) => {
 				else {
 					dispatch(disableJoinButton(false));
 					setGameID1(e.target.value);
-					// 	let dataFilted1 = dataFilted[0].players.filter((player) => player.name == userName);
-					// 	if (dataFilted1.length == 0) dispatch(disableJoinButton(false));
-					// 	else dispatch(disableJoinButton(true));
 				}
 			});
 	};
 	const handleClick = () => {
 		dispatch(setName(userName));
-		console.log("uuuuuuuuuuuuuu", userName);
 		fetch("http://localhost:3001/gameList/", {
 			method: "GET",
 		})
@@ -41,15 +37,12 @@ const JoinGame = (props) => {
 			.then((data) => {
 				var myData;
 				data.forEach((element) => {
-					console.log("ggggggggggm ", game_id, element.gameID, element.gameID == game_id);
 					if (element.gameID == game_id) {
 						myData = element;
 					}
 				});
-				console.log("*********", myData);
 				dispatch(setID(myData.id));
 				var dataNew = myData;
-				console.log("youtube", dataNew, game_id, dataNew[game_id]);
 				dataNew.players.push({ name: userName, correct: [], wrong: [] });
 				fetch("http://localhost:3001/gameList/" + myData.id, {
 					method: "PUT",

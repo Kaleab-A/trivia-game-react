@@ -3,9 +3,7 @@ import { useDispatch } from "react-redux";
 import { setID, setGameID, setName } from "../redux/actions";
 import HomePageOption from "./HomePageOption";
 import gameIcon from "../Images/game.png";
-import exitIcon from "../Images/exit.png";
 import JoinGame from "./Join";
-import publicIcon from "../Images/public-icon-0.jpg";
 import creditIcon from "../Images/credit.png";
 import { Modal, Button } from "react-bootstrap";
 
